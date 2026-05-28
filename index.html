@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matix — Asistente personal y centro de mando</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0F1A; --card:#161B2E; --blue:#2D7FF9;
+    --text:#E8ECF4; --muted:#8A93A8; --border:rgba(255,255,255,.07);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:'Inter',sans-serif; line-height:1.6;
+    min-height:100vh; -webkit-font-smoothing:antialiased;
+    display:flex; flex-direction:column;
+  }
+  a{color:var(--blue); text-decoration:none}
+  a:hover{text-decoration:underline}
+  header.hero{
+    flex:1; display:flex; flex-direction:column; justify-content:center;
+    align-items:center; text-align:center; padding:96px 24px;
+    position:relative; overflow:hidden;
+  }
+  .glow{
+    position:absolute; top:14%; left:50%; transform:translateX(-50%);
+    width:440px; height:440px; max-width:92vw;
+    background:radial-gradient(circle, rgba(45,127,249,.22), transparent 70%);
+    pointer-events:none;
+  }
+  .spark{width:60px;height:60px;margin-bottom:30px;position:relative;
+    filter:drop-shadow(0 0 14px rgba(45,127,249,.55))}
+  .name{
+    font-family:'JetBrains Mono',monospace; font-weight:600;
+    font-size:clamp(40px,9vw,62px); letter-spacing:-.02em; position:relative;
+  }
+  .tag{color:var(--muted); font-size:clamp(16px,4vw,19px); margin-top:14px;
+    max-width:470px; position:relative}
+  .desc{margin-top:38px; max-width:540px; color:var(--text); position:relative;
+    font-size:16px}
+  .note{margin-top:22px; font-size:13px; color:var(--muted); position:relative}
+  footer{
+    border-top:1px solid var(--border); padding:26px 24px; text-align:center;
+    color:var(--muted); font-size:14px;
+  }
+  footer a{margin:0 10px; color:var(--muted)}
+  footer a:hover{color:var(--text)}
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="glow"></div>
+    <svg class="spark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#5AA0FF"/>
+          <stop offset="1" stop-color="#2D7FF9"/>
+        </linearGradient>
+      </defs>
+      <path d="M12 2 C12 8.6 8.6 12 2 12 C8.6 12 12 15.4 12 22 C12 15.4 15.4 12 22 12 C15.4 12 12 8.6 12 2 Z" fill="url(#g)"/>
+    </svg>
+    <h1 class="name">Matix</h1>
+    <p class="tag">Tu asistente personal y centro de mando para organizar la vida.</p>
+    <p class="desc">Matix reúne tus tareas, proyectos, calendario y apuntes en un solo lugar, con un asistente que te ayuda a capturarlo todo por voz y a no olvidar lo que importa.</p>
+    <p class="note">Aplicación de uso personal.</p>
+  </header>
+  <footer>
+    <a href="/privacy.html">Política de Privacidad</a> ·
+    <a href="/terms.html">Términos del Servicio</a>
+    <div style="margin-top:10px">© 2026 Matix</div>
+  </footer>
+</body>
+</html>

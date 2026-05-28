@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad — Matix</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0F1A; --card:#161B2E; --blue:#2D7FF9;
+    --text:#E8ECF4; --muted:#8A93A8; --border:rgba(255,255,255,.07);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg); color:var(--text); font-family:'Inter',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased}
+  a{color:var(--blue); text-decoration:none} a:hover{text-decoration:underline}
+  .bar{border-bottom:1px solid var(--border); padding:18px 24px}
+  .bar .wrap{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:12px}
+  .bar svg{width:26px;height:26px;filter:drop-shadow(0 0 8px rgba(45,127,249,.5))}
+  .bar .nm{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:18px}
+  .bar .home{margin-left:auto;color:var(--muted);font-size:14px}
+  main{max-width:760px;margin:0 auto;padding:48px 24px 80px}
+  h1{font-size:30px;letter-spacing:-.01em;margin-bottom:6px}
+  .updated{color:var(--muted);font-size:14px;margin-bottom:36px}
+  h2{font-size:19px;margin:34px 0 10px;color:var(--text)}
+  p,li{color:#C9D1E0;font-size:15.5px}
+  ul{margin:8px 0 8px 22px} li{margin:5px 0}
+  .callout{background:var(--card);border:1px solid var(--border);border-radius:12px;
+    padding:16px 18px;margin:18px 0;font-size:14.5px;color:#C9D1E0}
+  footer{border-top:1px solid var(--border);padding:24px;text-align:center;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+  <div class="bar"><div class="wrap">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2 C12 8.6 8.6 12 2 12 C8.6 12 12 15.4 12 22 C12 15.4 15.4 12 22 12 C15.4 12 12 8.6 12 2 Z" fill="#2D7FF9"/></svg>
+    <span class="nm">Matix</span>
+    <a class="home" href="/index.html">Inicio</a>
+  </div></div>
+  <main>
+    <h1>Política de Privacidad</h1>
+    <p class="updated">Última actualización: mayo de 2026</p>
+
+    <p>Matix es una aplicación de uso personal que ayuda a organizar tareas, proyectos, calendario y apuntes. Esta política explica qué datos maneja la aplicación y cómo.</p>
+
+    <h2>1. Información que se maneja</h2>
+    <ul>
+      <li><strong>Datos que tú ingresas:</strong> tareas, proyectos, eventos, apuntes y notas que creas dentro de la aplicación.</li>
+      <li><strong>Datos de Google que autorizas:</strong> al conectar tu cuenta de Google, la aplicación accede a los eventos de tu Google Calendar para mostrarlos y sincronizarlos. Solo se solicita este acceso si tú lo autorizas.</li>
+      <li><strong>Voz:</strong> cuando usas el asistente por voz, el audio se procesa para convertirlo en texto y poder responderte.</li>
+    </ul>
+
+    <h2>2. Cómo se usa la información</h2>
+    <p>Los datos se usan únicamente para ofrecerte las funciones de la aplicación: organizar tu información, recordarte cosas y permitir que el asistente responda. No se venden ni se comparten con fines publicitarios.</p>
+
+    <h2>3. Servicios de terceros</h2>
+    <p>Para funcionar, la aplicación se apoya en estos servicios, que procesan datos solo para operar Matix:</p>
+    <ul>
+      <li><strong>Google</strong> — API de Google Calendar, para leer y sincronizar tus eventos.</li>
+      <li><strong>OpenAI</strong> — procesamiento de texto y voz del asistente.</li>
+      <li><strong>Supabase</strong> — almacenamiento seguro de tus datos.</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Uso de datos de Google.</strong> El uso de la información recibida de las APIs de Google se ajusta a la
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Política de Datos de Usuario de los Servicios API de Google</a>,
+      incluidos sus requisitos de Uso Limitado. La aplicación accede a tu calendario solo para mostrarte y sincronizar tus eventos, y no usa esos datos para ningún otro fin.
+    </div>
+
+    <h2>4. Almacenamiento y conservación</h2>
+    <p>Tus datos se guardan en Supabase mientras uses la aplicación. Puedes eliminarlos desde la propia aplicación.</p>
+
+    <h2>5. Tu control</h2>
+    <p>Puedes desconectar tu cuenta de Google en cualquier momento y revocar el acceso desde la
+      <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">configuración de seguridad de tu cuenta de Google</a>. También puedes borrar los datos que hayas creado.</p>
+
+    <h2>6. Cambios</h2>
+    <p>Esta política puede actualizarse. La fecha de la última actualización aparece al inicio de la página.</p>
+
+    <h2>7. Contacto</h2>
+    <p>Para cualquier consulta sobre esta política, escribe a <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a>.</p>
+  </main>
+  <footer>© 2026 Matix · <a href="/index.html">Inicio</a> · <a href="/terms.html">Términos</a></footer>
+</body>
+</html>
